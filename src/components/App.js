@@ -44,7 +44,7 @@ const App = () => {
                 <button id='filter-btn-3' onClick={handleClick}>Shakes</button>&nbsp;&nbsp;
             </div>
             <br />
-            {items && <div style={{ display: 'flex', gap: '25px', flexWrap: 'wrap' }}>
+            {items.length !== 0 && <div style={{ display: 'flex', gap: '25px', flexWrap: 'wrap'}}>
                 {items.map((item, ind) => {
                     return (
                         <div key={ind} style={{ width: "20%", border: "2px solid black", marginBottom: "15px", padding: "0px 8px" }}>
@@ -56,7 +56,7 @@ const App = () => {
                     )
                 })}
             </div>}
-            {breakfast && <div data-test-id="menu-item-breakfast" style={{ display: 'flex', gap: '25px', flexWrap: 'wrap' }}>
+            {breakfast.length !== 0 && <div data-test-id="menu-item-breakfast" style={{ display: 'flex', gap: '25px', flexWrap: 'wrap' }}>
                 {breakfast.map((item, ind) => {
                     return (
                         <div key={ind} style={{ width: "20%", border: "2px solid black", marginBottom: "15px", padding: "0px 8px" }}>
@@ -68,7 +68,7 @@ const App = () => {
                     )
                 })}
             </div>}
-            {lunch && <div data-test-id="menu-item-lunch" style={{ display: 'flex', gap: '25px', flexWrap: 'wrap' }}>
+            {lunch.length !== 0 && <div data-test-id="menu-item-lunch" style={{ display: 'flex', gap: '25px', flexWrap: 'wrap' }}>
                 {lunch.map((item, ind) => {
                     return (
                         <div key={ind} style={{ width: "20%", border: "2px solid black", marginBottom: "15px", padding: "0px 8px" }}>
@@ -80,7 +80,7 @@ const App = () => {
                     )
                 })}
             </div>}
-            {shakes && <div data-test-id="menu-item-shakes" style={{ display: 'flex', gap: '25px', flexWrap: 'wrap' }}>
+            {shakes.length !== 0 && <div data-test-id="menu-item-shakes" style={{ display: 'flex', gap: '25px', flexWrap: 'wrap' }}>
                 {shakes.map((item, ind) => {
                     return (
                         <div key={ind} style={{ width: "20%", border: "2px solid black", marginBottom: "15px", padding: "0px 8px" }}>
